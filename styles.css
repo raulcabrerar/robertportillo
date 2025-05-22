@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 /* General Body Styles */
 body {
   font-family: 'Manrope', sans-serif; /* Modern sans-serif font for body text */
@@ -225,7 +235,6 @@ a:focus {
 
 .btn:hover {
   background-color: #0056b3; /* Darken background on hover */
-  color: #ffffff; /* Keep text color white or adjust if needed */
   transform: translateY(-2px); /* Slight lift on hover */
   box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* Add shadow on hover */
 }
@@ -274,8 +283,8 @@ a:focus {
   font-weight: 600; /* Make highlighted text slightly bolder */
 }
 
-/* General Section Spacing (using a common class or tag) */
-section, .content-section { /* Assuming 'section' tag or a common class for content blocks */
+/* General Section Spacing */
+section { /* General styling for section elements */
   margin-top: 2em;
   margin-bottom: 2em;
   padding-top: 1em; /* Padding for internal spacing if needed */
